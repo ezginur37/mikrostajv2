@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mikrostaj | Anasayfa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f8fa;
+      color: #333;
+    }
+    header, footer {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 3px solid #003366;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      flex: 1 1 280px;
+      max-width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #0077cc;
+      color: white;
+      padding: 0.6rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #005fa3;
+    }
+    footer p {
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mikrostaj</h1>
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    <a href="basvuru.html">Başvuru</a>
+    <a href="iletisim.html">İletişim</a>
+  </nav>
+</header>
+
+<div class="hero">
+  Üniversite Öğrencileri için Kısa Süreli Staj Fırsatları
+</div>
+
+<main>
+  <section>
+    <h2>Neden Mikrostaj?</h2>
+    <p>
+      Mikrostaj, üniversite öğrencilerine gerçek projelerde yer alma fırsatı sunar. Kısa süreli,
+      esnek ve etkili stajlarla kariyerine hızlı bir başlangıç yapabilirsin.
+    </p>
+  </section>
+
+  <section>
+    <h2>Staj Fırsatları</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Teknoloji Stajı" />
+        <h3>Teknoloji Stajı</h3>
+        <p>Yazılım geliştirme ve yapay zeka alanlarında kısa dönem staj fırsatları.</p>
+        <a href="basvuru.html" class="btn">Başvur</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Pazarlama Stajı" />
+        <h3>Pazarlama Stajı</h3>
+        <p>Dijital pazarlama ve sosyal medya kampanyalarında deneyim kazan.</p>
+        <a href="basvuru.html" class="btn">Başvur</a>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?auto=format&fit=crop&w=600&q=80" alt="Tasarım Stajı" />
+        <h3>Tasarım Stajı</h3>
+        <p>Grafik tasarım ve UX/UI projelerinde aktif rol al.</p>
+        <a href="basvuru.html" class="btn">Başvur</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nasıl Başvurulur?</h2>
+    <p>
+      Başvurmak için <a href="basvuru.html">başvuru sayfamızı</a> ziyaret ederek formu doldurabilir,
+      kısa sürede seni aramızda görmek için heyecanla bekliyoruz!
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mikrostaj. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
